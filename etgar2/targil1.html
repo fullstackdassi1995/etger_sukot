@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>targil 1</title>
+</head>
+<body> <script>
+//הדפס את טבלת לוח הכפל בגודל 20*20 סדר ההדפסה לי השורות
+// יש להתעלם מצורה החיצונית של לוח הכפל ולהתייחס רק לערכים 
+ min = 1 , cefel = 1 , max = cefel * 20
+
+while (min <= 400){
+    for ( min = cefel ; min <= max ; min = min + cefel){
+    document.write(` ${min} ,`)
+    }
+cefel++
+min++
+max = cefel * 20
+document.write(`<br/>`)
+    }
+    
+</script>
+
+
+    
+</body>
+</html>

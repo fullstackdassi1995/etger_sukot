@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>targil 2</title>
+</head>
+<body>
+    <p>neme the pupil: <input id="id_name" type="text" /> </p>
+    <p> January salary: <input id="id_January" type="number" /> </p>
+    <p> February salary: <input id="id_February" type="number" /> </p>
+    <p> March salary: <input id="id_March" type="number" /> </p>
+
+
+
+    <p>  <button type="button" onclick="buttonClick()">click here!</button>  </p>
+
+    <script> //-------- לא ------ לבדיקה -----
+    ///   *****************   לא   לבדיקה    ***************
+    function buttonClick(){
+    namePupil = parseInt(document.getElementById(id_name).value)
+    const maxPeopil = 200    
+    January = parseInt(document.getElementById(id_January).value)
+    February = parseInt(document.getElementById(id_February).value)
+    March = parseInt(document.getElementById(id_March).value)
+    
+salary = 0
+        if (January > February){
+            if (January > March){
+                document.write(`salary January is the best : ${January}`)
+            }
+            else
+            { document.write(`salary march is the best : ${March}`)
+            }
+        }
+        else {
+            document.write(`salary february is the best : ${February}`)
+        }
+        }
+
+
+
+
+</script>
+    
+</body>
+</html>

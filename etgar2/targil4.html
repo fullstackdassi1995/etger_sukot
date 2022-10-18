@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>targil 4</title>
+</head>
+<body><script>
+//בביה"ס יש 100 תלמידים ולכל תלמיד 10 ציונים
+//הנתונים מסודרים בקלט לפי תלמידים דהיינו - 10 ציוני תלמיד ראשון
+// אח"כ 10 ציוני תלמיד שני וכו
+// הדפס את ממוצע ציוניו של כל תלמיד וכן את ממצוע ביה"ס
+
+num_tal = 1
+all_school = 0
+
+while(true){
+talmid = 0
+
+    if (num_tal > 100){
+        break;    }
+
+        for (mone = 1 ; mone <= 10 ; mone++){
+        x =  parseInt(prompt(`enter pupil's grades`))
+        talmid += x
+        }
+    
+document.write(`the average of ${num_tal} pupil is ${talmid / 10} <br/>`)
+num_tal++
+all_school += talmid
+}
+
+document.write(`the average of all school is: ${all_school / 100}`)
+
+</script>
+    
+</body>
+</html>
